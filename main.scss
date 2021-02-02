@@ -473,3 +473,184 @@ main {
     }
 
 }
+
+@media screen and (min-width:768px) {
+    .newsletter-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        h1 {
+            text-align: left;
+            align-self: center;
+            margin-left: 5rem;
+        }
+
+        .btn {
+            justify-self: center;
+        }
+    }
+}
+
+// footer
+
+footer {
+    background: $darkBlue1;
+    padding: 0 0 3rem 0;
+}
+
+.footer-center {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: grid;
+    place-items: center;
+}
+
+.form-control {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+
+
+    .error {
+        color: $brightRed;
+        display: none;
+        margin-left: 8rem;
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+
+    &-input {
+        width: 300px;
+        padding: 1rem;
+        margin-right: 1rem;
+        border: transparent;
+        border-radius: 20px;
+        color: $brightRed;
+    }
+
+    .submit {
+        padding: 0 1rem;
+        border-radius: 20px;
+        border: transparent;
+        background: $brightRed;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.3s all linear;
+
+        &:hover {
+            background: $paleRed;
+            color: $darkBlue;
+        }
+    }
+
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 0 4rem;
+
+    &-1 {
+        justify-self: start;
+    }
+
+    &-2 {
+        justify-self: end;
+    }
+
+    ul li {
+        margin-bottom: 1rem;
+    }
+
+    .link {
+        color: $lightGray;
+
+        &:hover {
+            color: $brightRed;
+        }
+    }
+}
+
+.links-1 {
+    justify-self: start;
+}
+
+.footer-logo {
+    display: grid;
+    place-items: center;
+}
+
+.social-links {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+
+    .social-link {
+        cursor: pointer;
+    }
+}
+
+
+.copyright {
+    text-align: center;
+    color: $lightGray
+}
+
+@media screen and (min-width:768px) {
+    footer {
+        padding: 0 7rem 3rem 7rem;
+    }
+
+    .footer-center {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .form-control {
+        order: 3;
+    }
+
+    .links {
+        order: 2;
+    }
+
+    .social-links {
+        order: 2;
+    }
+
+    .copyright {
+        text-align: right;
+    }
+
+}
+
+.change .error {
+    display: block;
+}
+
+.change .form-input {
+    border: 3px solid $brightRed
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: #ffffff;
+}
+
+@media screen and (min-width:768px) {
+    .attribution {
+        text-align: right;
+    }
+}
