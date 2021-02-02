@@ -37,6 +37,8 @@ a:hover {
   color: #fafafa;
   cursor: pointer;
   transition: 0.4s all ease-in;
+  width: 10rem;
+  padding: 1rem 0;
 }
 
 .btn:hover {
@@ -341,5 +343,91 @@ main::before {
   font-size: 36px;
   font-weight: 700;
   color: #242d52;
+}
+
+.testimonial .carousel {
+  background: #ffffff;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial .carousel .carousel-cell {
+  width: 66%;
+  height: 300px;
+  margin-right: 10px;
+  background: #fafafa;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.testimonial .carousel .carousel-cell .avatar {
+  width: 80px;
+}
+
+.testimonial .carousel .carousel-cell h3 {
+  color: #242d52;
+}
+
+.testimonial .carousel .carousel-cell p {
+  color: #9095a7;
+}
+
+.flickity-prev-next-button {
+  display: none;
+}
+
+.flickity-page-dots .dot {
+  background: white;
+  border: 3px solid #f25f3a;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #f25f3a;
+}
+
+.newsletter {
+  display: grid;
+  place-items: center;
+}
+
+.newsletter-container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  margin-top: 2rem;
+  padding: 5rem 2rem;
+  background: #f25f3a;
+  position: relative;
+  background-image: url(./images/bg-simplify-section-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.newsletter-container h1 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.newsletter-container .btn {
+  background-color: #ffffff;
+  color: #f25f3a;
+  width: 10rem;
+  padding: 1rem 0;
+}
+
+.newsletter-container .btn:hover {
+  background: #ffefeb;
 }
 /*# sourceMappingURL=main.css.map */

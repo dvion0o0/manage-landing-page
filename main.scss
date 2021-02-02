@@ -36,6 +36,8 @@ a:hover {
     color: $lightGray;
     cursor: pointer;
     transition: 0.4s all ease-in;
+    width: 10rem;
+    padding: 1rem 0;
 }
 
 .btn:hover {
@@ -379,4 +381,95 @@ main {
         font-weight: 700;
         color: $darkBlue;
     }
+
+    .carousel {
+        background: #ffffff;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+
+        .carousel-cell {
+            width: 66%;
+            height: 300px;
+            margin-right: 10px;
+            background: $lightGray;
+            border-radius: 5px;
+            display: grid;
+            place-items: center;
+            position: relative;
+            text-align: center;
+            padding: 1rem 2rem;
+
+            .avatar {
+                width: 80px;
+            }
+
+            h3 {
+                color: $darkBlue;
+            }
+
+            p {
+                color: $darkGrayBlue
+            }
+        }
+
+    }
+}
+
+.flickity-prev-next-button {
+    display: none;
+}
+
+.flickity-page-dots .dot {
+    background: white;
+    border: 3px solid $brightRed;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: $brightRed;
+}
+
+// newsletter
+
+.newsletter {
+    display: grid;
+    place-items: center;
+
+    &-container {
+        display: grid;
+        place-items: center;
+        width: 100vw;
+        margin-top: 2rem;
+        padding: 5rem 2rem;
+        background: $brightRed;
+        position: relative;
+        background-image: url(./images/bg-simplify-section-mobile.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: $brightRed;
+            width: 10rem;
+            padding: 1rem 0;
+
+            &:hover {
+                background: $paleRed;
+            }
+        }
+
+    }
+
 }
